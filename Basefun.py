@@ -1,4 +1,4 @@
-# create table 3 in docx
+# create table 1. in docx
 
 def py2doc(df, doc=None ,title="", caption="", save=True, filename="Result", path=None):
     import docx
