@@ -1,4 +1,4 @@
-# create table 1. in docx
+# create table in docx
 
 def py2doc(df, doc=None ,title="", caption="", save=True, filename="Result", path=None):
     import docx
@@ -48,12 +48,12 @@ def py2doc(df, doc=None ,title="", caption="", save=True, filename="Result", pat
 
 
 #Example
-from sklearn import datasets
-import pandas as pd
-from Basefun import py2doc
-iris= datasets.load_iris()
-df=pd.DataFrame(iris.data).head()
-mydoc= py2doc(df=df ,title="International System of Units",save=False)
-mydoc= py2doc(df=df, doc=mydoc ,title="International System of Units",save=False)
-mydoc= py2doc(df=df, doc=mydoc ,title="International System of Units",save=False)
-py2doc(df=df, doc=mydoc ,title="International Sys", caption="Table One")
+#from sklearn import datasets
+#import pandas as pd
+#from Basefun import py2doc
+#iris= datasets.load_iris()
+#df=pd.DataFrame(iris.data).head()
+#mydoc= py2doc(df=df ,title="International System of Units",save=False)
+#mydoc= py2doc(df=df, doc=mydoc ,title="International System of Units",save=False)
+#mydoc= py2doc(df=df, doc=mydoc ,title="International System of Units",save=False)
+#py2doc(df=df, doc=mydoc ,title="International Sys", caption="Table One")
