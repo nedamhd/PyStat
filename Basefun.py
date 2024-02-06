@@ -1,8 +1,11 @@
 # create table in docx
 
-def py2doc(df, doc=None ,title="", caption="", save=True, filename="Result", path=None):
+def py2doc(df, doc=None , columnsname= None, title="", caption="", save=True, filename="Result", path=None):
     import docx
     from os import getcwd, listdir
+    import pandas as pd
+
+    df = pd.DataFrame(df, columns= columnsname)
     #from docx.enum.table import WD_ROW_HEIGHT_RULE
     if (doc==None):
        doc = docx.Document()
