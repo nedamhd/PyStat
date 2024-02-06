@@ -3,10 +3,9 @@
 
 
 ## Call in R
-`
-library(reticulate)
-source_python('https://raw.githubusercontent.com/nedamhd/PyStat/master/Basefun.py')
-options(reticulate.pandas_use_nullable_data_types = TRUE)
+`library(reticulate)`
+`source_python('https://raw.githubusercontent.com/nedamhd/PyStat/master/Basefun.py')`
+`options(reticulate.pandas_use_nullable_data_types = TRUE)`
 
 myres = py2doc(df=as.data.frame(df1), 
                title="International Sys", save = FALSE,
